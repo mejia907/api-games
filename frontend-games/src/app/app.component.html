@@ -1,1 +1,10 @@
-<h1>Hola</h1>
+
+<h1>hola</h1>
+<div class="row">
+    <div class="categorias" *ngFor="let categoria of categorias ">
+        <img [src]="categoria.imgURL" class="card-img-top" alt="">
+        <div class="card-body">
+            <h3 class="card-title">{{ categoria.name }}</h3>
+        </div>
+    </div>
+</div>
