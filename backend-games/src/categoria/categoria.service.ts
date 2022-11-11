@@ -1,8 +1,12 @@
+import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
+import { map, Observable } from 'rxjs';
 import { CategoriaEntity } from './categoria.entity';
 
 @Injectable()
 export class CategoriaService {
+
+    constructor(private readonly httpService: HttpService){}
 
     private categorias: CategoriaEntity[] =[
         {
@@ -46,5 +50,9 @@ export class CategoriaService {
 
     getCategorias(): CategoriaEntity[]{
         return this.categorias;
+    }
+
+    getListaJuegos(name: string): Observable<any>{
+        return this.httpService.get(`https://www.freetogame.com/api/games?category=${name}`).pipe(map(response => response.data));
     }
 }
