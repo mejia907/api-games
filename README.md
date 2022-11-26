@@ -7,4 +7,4 @@
 Proeycto desarrollado bajo el Framework de <b>Angular (14)</b>, que permite consumir una API de video juegos a traves del Backend que esta desarrollado con <b>NestJS</b>
 
 ### URL API
-<a href src="https://www.freetogame.com/api-doc" target="_blank">Ver API<a/>
+<a href="https://www.freetogame.com/api-doc" target="_blank">Ver API<a/>
