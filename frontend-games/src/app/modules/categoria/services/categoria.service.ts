@@ -13,8 +13,11 @@ export class CategoriaService {
 
   constructor( private http:HttpClient) { }
 
+  /**
+   * Permite consultar en la API la lista de categorias que existen
+   * @returns JSON
+   */
   public getAllCategorias(): Observable<Categoria[]>{
-    console.log(this._urlAPI);
     return this.http.get<Categoria[]>(this._urlAPI);
   }
   
