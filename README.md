@@ -6,5 +6,9 @@
 ## Descripción
 Proyecto desarrollado bajo el Framework de <b>Angular (14)</b>, que permite consumir una API de video juegos a traves del Backend que esta desarrollado con <b>NestJS</b>, al igual que para el diseño utilizo <b>Tailwind CSS</b>
 
+![Image text](https://github.com/mejia907/api-games/blob/main/frontend-games/src/assets/images/CapturaG1.png)
+
+![Image text](https://github.com/mejia907/api-games/blob/main/frontend-games/src/assets/images/CapturaG2.png)
+
 ### URL API
 <a href="https://www.freetogame.com/api-doc" target="_blank">Ver API<a/>
