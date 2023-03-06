@@ -14,7 +14,7 @@ import { PlatformPipe } from 'src/app/pipes/platform.pipe';
 })
 export class ListaComponent implements OnInit {
 
-  private categoria: string | undefined ;
+  public categoria: string | undefined ;
   public juegos: any = [];
 
   constructor(
