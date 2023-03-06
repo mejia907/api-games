@@ -1,13 +1,13 @@
-<p class="mr-6 font-bold">{{categoria}}</p>
+<p class="mr-6 font-bold text-white">{{categoria}}</p>
 <div class="lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
     <div class="group relative py-4" *ngFor="let juego of juegos">
-        <div class="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 m:aspect-w-2 sm:aspect-h-1 sm:h-72 ">
+        <div class="flex flex-col items-center bg-slate-800 border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-slate-700 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 m:aspect-w-2 sm:aspect-h-1 sm:h-72 ">
             <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg p-2" src="{{juego.thumbnail}}" alt="">
             <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{juego.title}}</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{juego.short_description}}</p>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">{{juego.title}}</h5>
+                <p class="mb-3 font-normal text-white dark:text-gray-400">{{juego.short_description}}</p>
                 <div class="flex flex-row justify-items-start leading-normal">
-                    <p class="mr-4">Plataformas:</p>
+                    <p class="mr-4 text-white">Plataformas:</p>
                     <div *ngFor="let src_platform of juego.platform | platform">
                         <img class="w-5 h-5 mb-3 mr-4 rounded-full shadow-lg" src="{{src_platform}}" />                    
                     </div>
