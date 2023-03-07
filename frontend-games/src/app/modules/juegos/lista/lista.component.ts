@@ -16,6 +16,7 @@ export class ListaComponent implements OnInit {
 
   public categoria: string | undefined ;
   public juegos: any = [];
+  public loading: boolean = false;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -23,6 +24,7 @@ export class ListaComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.loading = true;
     this.categoria = this.activatedRoute.snapshot.paramMap.get('categoria')?.toUpperCase();
     this.getListaJuegos()
   }
@@ -32,6 +34,7 @@ export class ListaComponent implements OnInit {
    */
   getListaJuegos(){    
     this.listaService.getListaJuegosCategoria(this.categoria!).subscribe((data: any)=>{
+      this.loading = false;
       this.juegos= data;
     });
   }

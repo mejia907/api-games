@@ -1,8 +1,8 @@
-<h2 class="text-2xl font-bold text-gray-900">Categorias</h2>
+<h2 class="text-2xl font-bold text-white">Categorias</h2>
 
 <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
     <div class="group relative py-4" *ngFor="let categoria of categorias">
-        <p class="text-base font-semibold text-gray-900">{{categoria.name}}</p>
+        <p class="text-base font-semibold text-white">{{categoria.name}}</p>
         <div
             class="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
             <img src="{{categoria.imgURL}}" alt="" class="h-full w-full object-cover object-center">
