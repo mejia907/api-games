@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { ListaService } from '../services/lista.service';
 import { PlatformPipe } from 'src/app/pipes/platform.pipe';
+import { SearchPipe } from 'src/app/pipes/search.pipe';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-lista',
   standalone: true,
-  imports: [CommonModule,PlatformPipe],
+  imports: [CommonModule,PlatformPipe,SearchPipe,FormsModule],
   templateUrl: './lista.component.html',
   styleUrls: ['./lista.component.css'],
   providers: [ListaService ]
@@ -17,6 +19,7 @@ export class ListaComponent implements OnInit {
   public categoria: string | undefined ;
   public juegos: any = [];
   public loading: boolean = false;
+  public searchText: string = '';
 
   constructor(
     private activatedRoute: ActivatedRoute,
